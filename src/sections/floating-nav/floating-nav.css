@@ -1,0 +1,37 @@
+#floating__nav {
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    #floating__nav {
+        display: flex;
+        align-items: center;
+        position: fixed;
+        bottom: 3rem;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 10;
+    }
+
+    .scrollspy {
+        display: flex;
+        gap: 1rem;
+        background: var(--color-3);
+        padding: 1rem 3rem;
+        border-radius: 3rem;
+        box-shadow: .5rem .5rem .5rem #171717;
+        border: .4rem solid var(--color-4);
+    }
+
+    #floating__nav a {
+        padding: .7rem;
+        border-radius: 50%;
+        font-size: 1.3rem;
+        display: grid;
+    }
+
+    #floating__nav li.active {
+        /* background: var(--color-2); */
+        border-radius: 50%;
+    }
+}

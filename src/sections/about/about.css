@@ -1,0 +1,135 @@
+#about {
+    position: relative;
+}
+
+.about__container {
+    display: grid;
+    grid-template-columns: 32% 53%;
+    gap: 15%;
+    position: relative;
+}
+
+.about__cards {
+    margin: 3rem 0 i.5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem
+}
+
+.card.about__card {
+    text-align: center;
+}
+
+.about__card-icon {
+    font-size: 1.4rem;
+    color: var(--color-black);
+    border-radius: .5rem;
+    width: fit-content;
+    margin-inline: auto;
+    padding: .4rem;
+    display: flex;
+    align-items: center;
+    transition: var(--transition);
+}
+
+.card.about__card:hover .about__card-icon {
+    background: var(--color-3);
+    color: var(--color-white);
+}
+
+.card.about__card h3{
+    margin: 1rem 0;
+}
+
+.about__image-bg {
+    background: var(--color-white);
+    height: 22rem;
+    width: 17rem;
+    position: absolute;
+}
+
+.about__image-lg {
+    width: 21rem;
+    position: relative;
+    top: 1rem;
+    left: 1rem;
+    filter: saturate(0) brightness(0.3);
+    transition: var(--transition)
+}
+
+.about__image-lg img {
+    width: 21rem;
+}
+
+.about__image-sm {
+    width: 20rem;
+    height: 27rem;
+    overflow: hidden;
+    position: absolute;
+    left: 4rem;
+    top: 4rem;
+    transition: var(--transition);
+}
+
+.about__right h2 {
+    margin-bottom: 1rem;
+}
+
+.about__right p {
+    margin-top: 1rem;
+    color: var(--color-black);
+}
+
+.about__left:hover .about__image-sm {
+    opacity: 0;
+}
+
+.about__left:hover .about__image-lg {
+   filter: saturate(1) brightness(1);
+   top: 0;
+   left: 0; 
+}
+
+@media screen and (max-width: 1124px) {
+    #about {
+        height: fit-content;
+        display: grid;
+        place-items: center;
+    }
+
+    .about__image-bg, .about__image-sm {
+        display: none;
+    }
+
+    .about__container {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        gap: 5rem;
+        margin: 0;
+    }
+
+    .about__image-lg {
+        filter: saturate(1) brightness(1);
+        width: 100%;
+        top: 0;
+        left: 0;
+        border: 1rem solid var(--color-white);
+    }
+
+    .about__image-lg img {
+        width: 100%;
+    }
+
+    .about__right {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .about__cards {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}

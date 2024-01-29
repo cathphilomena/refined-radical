@@ -1,0 +1,30 @@
+.gallery__title {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.gallery__container {
+    width: 100%;
+}
+
+.gallery__container p {
+    color: var(--color-black);
+}
+
+.swiper {
+    height: fit-content;
+}
+
+.swiper-slide {
+    cursor: grab;
+    padding-bottom: 1rem;
+}
+
+.gallery__container p {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.gallery__swiper img {
+    width: 100%
+}
