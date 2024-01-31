@@ -8,6 +8,7 @@
 
 .container p {
     margin-bottom: 1rem;
+    color: var(--color-black);
 }
 
 .faqs__container {

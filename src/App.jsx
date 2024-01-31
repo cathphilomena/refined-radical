@@ -8,6 +8,7 @@ import Footer from './sections/footer/Footer';
 import FloatingNav from './sections/floating-nav/FloatingNav';
 import Theme from './theme/Theme';
 import { useThemeContext } from './context/theme-context';
+import Portfolio from './sections/portfolio/Portfolio';
 // import {useRef, useState, useEffect} from 'react'
 
 const App = () => {
@@ -48,6 +49,7 @@ const App = () => {
       <About/>
       <Gallery/>
       <FAQs/>
+      <Portfolio/>
       <Contact/>
       <Footer/>
       <Theme/>

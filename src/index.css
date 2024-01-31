@@ -145,6 +145,11 @@ h3 {
     transform: translateY(-.5rem);
 }
 
+.primary {
+    background: var(--color-2);
+    color: var(--color-white);
+}
+
 @media screen and (max-width: 1124px) {
     .container {
         width: var(--container-width-md);

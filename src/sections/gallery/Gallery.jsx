@@ -8,10 +8,11 @@ import 'swiper/css/navigation';
 import 'swiper/css/scrollbar';
 import image1 from '../../assets/image1.jpg'
 import image2 from '../../assets/image2.jpg'
-import image3 from '../../assets/image3.jpg'
+import image3 from '../../assets/image10.jpg'
 import image4 from '../../assets/image4.jpg'
 import image5 from '../../assets/image5.jpg'
-import image6 from '../../assets/image6.jpg'
+import image6 from '../../assets/image11.jpg'
+import image7 from '../../assets/image12.jpg'
 
 const Gallery = () => {
   return (
@@ -39,6 +40,7 @@ const Gallery = () => {
                 <SwiperSlide><img src={image4}/></SwiperSlide>
                 <SwiperSlide><img src={image5}/></SwiperSlide>
                 <SwiperSlide><img src={image6}/></SwiperSlide>
+                <SwiperSlide><img src={image7}/></SwiperSlide>
                 ...
               </Swiper>
             </div>
